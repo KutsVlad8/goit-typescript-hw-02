@@ -18,12 +18,9 @@ const day = {
   sun: Day.WEEKEND,
 };
 
-function isWeekend(day) {
-  if (day === "WEEKEND") {
-    return true;
-  } else {
-    false;
-  }
+function isWeekend(day: Day): boolean {
+  return day === Day.WEEKEND;
 }
 
-isWeekend(day.mon);
+console.log(isWeekend(day.mon));
+console.log(isWeekend(day.sat));
