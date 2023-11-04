@@ -22,5 +22,4 @@ function isWeekend(day: Day): boolean {
   return day === Day.WEEKEND;
 }
 
-console.log(isWeekend(day.mon));
-console.log(isWeekend(day.sat));
+export { isWeekend, day };
